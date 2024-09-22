@@ -32,8 +32,9 @@ Before starting, ensure you have the following installed:
 1️⃣ Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/books-apollo-server.git
+git clone https://github.com/muhammadsobananjum/flutter-graphql-demo
 cd books-apollo-server
+```
 
 2️⃣ Install dependencies:
 ```bash
