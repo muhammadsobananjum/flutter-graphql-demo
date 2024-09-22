@@ -39,6 +39,7 @@ cd books-apollo-server
 2️⃣ Install dependencies:
 ```bash
 npm install
+```
 
 3️⃣ Set up environment variables 🌱
 Create a .env file in the root directory of your Node.js project to store all your environment variables, like MongoDB connection strings and port numbers.
@@ -51,6 +52,7 @@ This file allows you to securely manage environment variables and keeps sensitiv
 This project uses TypeScript, so you'll need to compile the TypeScript code into JavaScript before running it.
 ```bash
 npm run build
+```
 The compiled JavaScript files will be placed in the dist directory.
 
 5️⃣ Running the Backend Server Locally
@@ -58,12 +60,14 @@ You can run the server in either development mode or production mode:
 
 🔄 Development Mode:
 In this mode, nodemon will automatically restart the server when any file changes.
+```bash
 npm run dev
-
+```
 ✅ Production Mode:
 This will run the compiled JavaScript code from the dist directory.
 ```bash
 npm start
+```
 The server will now be running at http://localhost:4000/ 🌐.
 
 # 🏗️ CRUD Operations with GraphQL
@@ -79,14 +83,17 @@ Once the server is running, you can test the API using the GraphQL Playground:
 1️⃣ **Install Vercel CLI:**
 ```bash
 npm install -g vercel
+```
 
 2️⃣ Login to Vercel:
 ```bash
 vercel login
+```
 
 3️⃣ Deploy:
 ```bash
 vercel
+```
 
 Follow the prompts, and Vercel will automatically detect the TypeScript project, build it, and deploy it. You'll get a URL to access your GraphQL API in production!
 
@@ -106,11 +113,13 @@ Add the backend URLs to these files.
 ### `.env` (for the deployed backend):
 ```plaintext
 GRAPHQL_API_URL=https://your-deployment-url.vercel.app/graphql
+```
 .env_debug (for local development):
 
 ### `.env_debug` (for the local backend):
 ```plaintext
 GRAPHQL_API_URL=http://localhost:4000/graphql
+```
 This way, you can easily switch between local and deployed environments by choosing the appropriate .env file.
 
 ## 2️⃣ Modify Flutter Code to Use Environment Variables
@@ -131,6 +140,7 @@ abstract interface class AppEnv implements AppEnvFields {
 
   static final AppEnv _instance = kDebugMode ? DebugEnv() : ReleaseEnv();
 }
+```
 
 Make sure to include the .env files in your Flutter project's .gitignore to prevent exposing your environment variables publicly.
 
@@ -140,6 +150,7 @@ To run the Flutter app with the local/deployed backend, use the following comman
 
 ```bash
 flutter run
+```
 
 ## 🌟 Features of the Flutter Frontend
 
