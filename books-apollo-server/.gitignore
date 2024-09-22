@@ -1,0 +1,7 @@
+.vercel
+
+
+# Ignore node_modules, src, and dist folders
+/node_modules/
+/src/
+
