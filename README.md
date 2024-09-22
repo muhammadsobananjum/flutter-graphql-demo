@@ -29,41 +29,41 @@ Before starting, ensure you have the following installed:
 
 ## Getting Started
 
-1️⃣ Clone the repository:
+### 1️⃣ Clone the repository:
 
 ```bash
 git clone https://github.com/muhammadsobananjum/flutter-graphql-demo
 cd books-apollo-server
 ```
 
-2️⃣ Install dependencies:
+### 2️⃣ Install dependencies:
 ```bash
 npm install
 ```
 
-3️⃣ Set up environment variables 🌱
+### 3️⃣ Set up environment variables 🌱
 Create a .env file in the root directory of your Node.js project to store all your environment variables, like MongoDB connection strings and port numbers.
 
 Example:
 DATABASE_URL=mongodb://localhost:27017/mydatabase
 This file allows you to securely manage environment variables and keeps sensitive data like your database connection string hidden. Add the .env file to your .gitignore to ensure it doesn't get committed.
 
-4️⃣ Compile TypeScript 🛠️
+### 4️⃣ Compile TypeScript 🛠️
 This project uses TypeScript, so you'll need to compile the TypeScript code into JavaScript before running it.
 ```bash
 npm run build
 ```
 The compiled JavaScript files will be placed in the dist directory.
 
-5️⃣ Running the Backend Server Locally
+###  5️⃣ Running the Backend Server Locally
 You can run the server in either development mode or production mode:
 
-🔄 Development Mode:
+### 🔄 Development Mode:
 In this mode, nodemon will automatically restart the server when any file changes.
 ```bash
 npm run dev
 ```
-✅ Production Mode:
+### ✅ Production Mode:
 This will run the compiled JavaScript code from the dist directory.
 ```bash
 npm start
@@ -80,17 +80,17 @@ Once the server is running, you can test the API using the GraphQL Playground:
 
 ## 🌍 Deploying the Backend to Vercel
 
-1️⃣ **Install Vercel CLI:**
+### 1️⃣ **Install Vercel CLI:**
 ```bash
 npm install -g vercel
 ```
 
-2️⃣ Login to Vercel:
+### 2️⃣ Login to Vercel:
 ```bash
 vercel login
 ```
 
-3️⃣ Deploy:
+### 3️⃣ Deploy:
 ```bash
 vercel
 ```
