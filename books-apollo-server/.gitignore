@@ -1,4 +1,5 @@
 .vercel
+.env
 
 
 # Ignore node_modules, src, and dist folders
